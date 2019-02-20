@@ -1,0 +1,24 @@
+Slide set: Logistic Regression Model Validation (Note Set from Week 5)
+
+Slide #14 provides data
+
+Slide #15 does the comparison test (e.g., all of the Y = 1 records {A, B, C, D} are compared against all of the Y = 0 records {E, F, G, H, I, J}).
+
+If the Y=1 record has a higher probability value of the pair, then it is Concordant.
+If the Y=1 record's probability is tied with the Y=0, then it is Tied.
+If the Y=0 record has a higher probability value of the pair, then it is Discordant.
+
+For our example, Record A has a probability of 0.95:
+Which is above Record E's probability; thus A & E are Concordant.
+Which is above Record F's probability; thus A & F are Concordant.
+etc. etc. etc.
+
+For our example, Record B has a probability of 0.80:
+Which is BELOW Record E's probability; thus B & E are Discordant.
+Which is TIED with Record F's probability; thus B & F are TIED.
+G, H, I, and J are Concordant with B.
+
+Etc. etc. etc.
+
+The calculations of Concordant %, C Statistic, etc. are provided in the Powerpoint Slides and on the third Worksheet of the LogisticRegression_ModelValidation excel file.
+
